@@ -24,6 +24,8 @@ color: #333;
 padding: 20px;
 display: flex;
 justify-content: flex-end;
+max-width: 1440px;
+margin: 0 auto;
 }
 
 .share-btn {
@@ -49,9 +51,9 @@ margin-right: 8px;
 }
 
 .main-container {
-max-width: 1280px;
+max-width: 1440px;
 margin: 0 auto;
-padding: 0 20px;
+padding: 80px 20px;
 }
 
 .title {
@@ -232,7 +234,7 @@ line-height: 1.5;
 }
 
 .main-container {
-    padding: 0 16px;
+    padding: 60px 15px;
 }
 
 .input-container {
