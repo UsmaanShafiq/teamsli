@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Creator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./assets/css/page.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-header">
+        <a class="btn" href="#!">
+          <img src="./assets/images/add-circle.svg" alt="Plus Icon">
+          <span>New slide</span>
+        </a>
+        <a class="btn" href="#!">
+          <img src="./assets/images/share.svg" alt="Share Icon">
+          <span>Share</span>
+        </a>
+      </div>
+      <div class="page-content">
+        <div class="slide-input">
+          <div class="input-container">
+            <textarea placeholder="Type a short summary or paste details" rows="2" class="text-input"></textarea>
+            <div class="input-actions">
+              <a class="btn btn-primary">
+                Update slide
+                <img src="./assets/images/ai-editing.svg" alt="Editing Icon">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slides-wrapper">
+          <div class="column-one">
+            <h2 class="title">Slide designs</h2>
+            <div class="slide-designs">
+              <div class="slider">
+                <div class="slide"><img src="./assets/images/slide1.png" alt="slide"></div>
+                <div class="slide"><img src="./assets/images/slide2.png" alt="slide"></div>
+                <div class="slide"><img src="./assets/images/slide3.png" alt="slide"></div>
+                <div class="slide"><img src="./assets/images/slide1.png" alt="slide"></div>
+                <div class="slide"><img src="./assets/images/slide2.png" alt="slide"></div>
+              </div>
+            </div>
+          </div>
+          <div class="column-two">
+            <h2 class="title">Generated Slides</h2>
+            <div class="generated-slides"></div>
+          </div>
+        </div>
+        
+      </div>
+    <script src="./assets/js/page.js"></script>
+  </body>
+</html>
