@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Aptos';
+    src: url('../fonts/aptos.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Aptos Bold';
+    src: url('../fonts/aptos-bold.ttf') format('truetype');
+}
+
+:root {
+--primary-blue: #0078D4;
+--light-gray: #F2F4F7;
+--lighter-gray: #F9FAFB;
+--dark-gray: #484848;
+}
+
+body {
+font-family: 'Aptos', sans-serif;
+background-color: white;
+color: #333;
+}
+
+.header {
+padding: 20px;
+display: flex;
+justify-content: flex-end;
+}
+
+.share-btn {
+display: flex;
+align-items: center;
+color: var(--primary-blue);
+background: transparent;
+border: none;
+font-size: 20px;
+font-weight: 700;
+cursor: pointer;
+padding: 8px 16px;
+border-radius: 6px;
+}
+
+.share-btn:hover {
+background-color: rgba(59, 130, 246, 0.1);
+}
+
+.share-btn img {
+margin-right: 8px;
+}
+
+.main-container {
+max-width: 1280px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.title {
+font-family: 'Aptos Bold', sans-serif;
+text-align: center;
+font-size: 32px;
+font-weight: 800;
+color: var(--dark-gray);
+margin-bottom: 40px;
+}
+
+.input-container {
+display: flex;
+gap: 15px;
+flex-direction: column;
+background-color: var(--light-gray);
+border-radius: 12px;
+padding: 16px;
+margin-bottom: 32px;
+}
+
+.slide-input {
+width: 100%;
+border: none;
+background: transparent;
+display: block;
+font-size: 14px;
+color: var(--dark-gray);
+margin-bottom: 12px;
+}
+
+.slide-input:focus {
+outline: none;
+}
+
+.create-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+width: fit-content;
+background-color: var(--primary-blue);
+color: white;
+border: none;
+border-radius: 10px;
+padding: 10px 30px;
+font-size: 14px;
+letter-spacing: 0.8px;
+font-weight: 600;
+cursor: pointer;
+}
+
+.create-btn:hover {
+background-color: #2563eb;
+}
+
+.create-btn img {
+margin-left: 8px;
+}
+
+.templates-container {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.template-card {
+background-color: var(--lighter-gray);
+border-radius: 20px;
+padding: 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.template-icon {
+color: var(--primary-blue);
+margin-bottom: 8px;
+}
+
+.template-title {
+color: var(--primary-blue);
+font-weight: 700;
+font-size: 20px;
+margin-bottom: 16px;
+}
+
+.template-description {
+color: #0C111D;
+font-size: 16px;
+line-height: 1.5;
+}
+
+/* Tablet styles for 744px and below */
+@media (max-width: 744px) {
+.main-container {
+    max-width: 100%;
+    padding: 0 24px;
+}
+.share-btn{
+    font-size: 18px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.templates-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.template-card:last-child {
+    grid-column: span 2;
+    max-width: 100%;
+    margin: 0;
+}
+
+.template-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.template-description {
+    font-size: 13px;
+}
+
+.input-container {
+    padding: 14px;
+    margin-bottom: 28px;
+    align-items: end;
+}
+
+.create-btn {
+    padding: 10px 16px;
+    width: fit-content;
+}
+.slide-input{
+    width: 100%;
+}
+}
+
+/* Desktop responsive styles */
+@media (min-width: 744px) {
+.templates-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.input-container {
+    flex-direction: column;
+    align-items: end;
+}
+
+.slide-input {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.create-btn {
+    width: auto;
+    margin-left: 12px;
+}
+}
+
+/* Mobile specific styles (390px and below) */
+@media (max-width: 390px) {
+.header {
+    padding: 16px;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.main-container {
+    padding: 0 16px;
+}
+
+.input-container {
+    padding: 15px 12px 10px;
+    margin-bottom: 24px;
+    gap: 10px;
+}
+
+.create-btn {
+    padding: 10px 0;
+    width: 100%;
+}
+
+.template-card {
+    padding: 16px;
+}
+
+.template-title {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.template-description {
+    font-size: 13px;
+}
+
+.templates-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+}
