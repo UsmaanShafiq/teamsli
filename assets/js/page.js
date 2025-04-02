@@ -24,7 +24,7 @@ $(document).ready(function(){
               settings: {
                   vertical: false,
                   verticalSwiping: false,
-                  slidesToShow: 2,
+                  slidesToShow: 1,
                   slidesToScroll: 1
               }
           }
