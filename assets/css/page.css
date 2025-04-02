@@ -129,7 +129,9 @@ body {
   overflow: hidden; /* Enables vertical scrolling */
   border-radius: 15px;
 }
-
+.slide-designs .slick-list{
+  overflow: unset;
+}
 .slider .slide img{
   width: 100%;
   cursor: pointer;
@@ -160,4 +162,69 @@ body {
   display: block;
   position: absolute;
   right: -15px;
+}
+.generated-slides{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F0F8FF;
+  border-radius: 15px;
+  height: 100%;
+  padding: 30px 0;
+}
+.cards .slick-track{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card-media .card-img{
+  width: 100%;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 90px;
+}
+
+.card-content h3{
+  color: #0C111D;
+font-family: "Aptos";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.card-content p{
+  color: #0C111D;
+  font-family: "Aptos";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media(max-width: 1024px){
+  .slide-designs{
+    height: auto;
+  }
+}
+@media(max-width:478px){
+  .container{
+    padding: 10px;
+  }
+  .slides-wrapper{
+    flex-direction: column-reverse;
+  }
+  .column-one, .column-two{
+    width: 100%;
+  }
+  .column-two{
+    padding: 20px 10px;
+  }
+  .cards .slick-track{
+    gap: 15px;
+  }
 }

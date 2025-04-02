@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Creator</title>
+    <link rel="stylesheet" href="./assets/css/page.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide-header">
+        <button class="btn btn-outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>New slide</span>
+        </button>
+        <button class="btn btn-outline">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8L20 12M20 12L16 16M20 12H4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Share</span>
+        </button>
+      </div>
+      
+      <div class="slide-input">
+        <div class="input-container">
+          <textarea placeholder="Type a short summary or paste details" rows="2" class="text-input"></textarea>
+          <div class="input-actions">
+            <button class="btn btn-primary">
+              Create slide
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content-sections">
+        <section class="generated-slide-section">
+          <h3 class="section-title">Generated slide</h3>
+          <div class="slide-preview">
+            <div class="slick-carousel">
+              <div class="slide-item">
+                <div class="arrow-slide">
+                  <div class="arrow-shape"></div>
+                  <div class="arrow-content">
+                    <h3 class="heading">Heading</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur. Nunc molestie ultrices in mauris. Nunc aliquam sollicitudin viverra nunc eu augue vestibulum. Tempor nunc Lorem ipsum dolor sit amet consectetur. Nunc molestie ultrices in mauris. Nunc aliquam sollicitudin viverra nunc eu augue vestibulum. Tempor nunc</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="arrow-slide">
+                  <div class="arrow-shape"></div>
+                  <div class="arrow-content">
+                    <h3 class="heading">Heading</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur. Nunc molestie ultrices in mauris. Nunc aliquam sollicitudin viverra nunc eu augue vestibulum. Tempor nunc Lorem ipsum dolor sit amet consectetur. Nunc molestie ultrices in mauris. Nunc aliquam sollicitudin viverra nunc eu augue vestibulum. Tempor nunc</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-item">
+                <div class="arrow-slide">
+                  <div class="arrow-shape"></div>
+                  <div class="arrow-content">
+                    <h3 class="heading">Heading</h3>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur. Nunc molestie ultrices in mauris. Nunc aliquam sollicitudin viverra nunc eu augue vestibulum. Tempor nunc Lorem ipsum dolor sit amet consectetur. Nunc molestie ultrices in mauris. Nunc aliquam sollicitudin viverra nunc eu augue vestibulum. Tempor nunc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="slide-designs-section">
+          <h3 class="section-title">Slide designs</h3>
+          <div class="design-options">
+            <div class="design-option" data-design="purple">
+              <div class="purple-design">
+                <div class="left-panel"></div>
+                <div class="right-panel">
+                  <div class="text-line"></div>
+                  <div class="text-line"></div>
+                  <div class="text-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="design-option selected" data-design="blue">
+              <div class="blue-design">
+                <div class="arrow-grid">
+                  <div class="mini-arrow"></div>
+                  <div class="mini-arrow"></div>
+                  <div class="mini-arrow"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                  <div class="text-line small"></div>
+                </div>
+              </div>
+            </div>
+            <div class="design-option" data-design="lime">
+              <div class="lime-design">
+                <div class="icon-item">
+                  <div class="icon-box"></div>
+                  <div class="icon-text">
+                    <div class="text-line small"></div>
+                    <div class="text-line small"></div>
+                  </div>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-box"></div>
+                  <div class="icon-text">
+                    <div class="text-line small"></div>
+                    <div class="text-line small"></div>
+                  </div>
+                </div>
+                <div class="icon-item">
+                  <div class="icon-box"></div>
+                  <div class="icon-text">
+                    <div class="text-line small"></div>
+                    <div class="text-line small"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="design-option" data-design="yellow">
+              <div class="yellow-design">
+                <div class="text-line"></div>
+                <div class="text-line"></div>
+                <div class="text-line"></div>
+                <div class="text-line"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <!-- jQuery required for Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/page.js"></script>
+  </body>
+</html>
