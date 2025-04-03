@@ -217,6 +217,12 @@ line-height: normal;
 }
 
 @media(max-width: 1024px){
+  .btn.btn-primary{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+  }
   .slide-designs{
     height: auto;
   }
@@ -276,9 +282,13 @@ line-height: normal;
     gap: 10px;
   }
   .column-one .slick-current:before{
-    left: 44%;
+    left: 43%;
     top: -14px;
     height: 22px;
     width: 22px
+  }
+  .column-one .slick-slide.slick-current{
+    border: 3px solid var(--primary-blue);
+    border-radius: 10px;
   }
 }
