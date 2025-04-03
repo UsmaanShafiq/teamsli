@@ -10,13 +10,13 @@ $(document).ready(function(){
       verticalSwiping: true,
       focusOnSelect: true,
       responsive: [
-          {
-              breakpoint: 1024, // When screen width is 1024px or less
+        {
+              breakpoint: 1025, // When screen width is 1024px or less
               settings: {
                   vertical: false, // Switch to horizontal mode
                   verticalSwiping: false,
                   slidesToShow: 2, // Adjust number of slides
-                  slidesToScroll: 1
+                  slidesToScroll: 1,
               }
           },
           {
@@ -24,12 +24,13 @@ $(document).ready(function(){
               settings: {
                   vertical: false,
                   verticalSwiping: false,
-                  slidesToShow: 1,
+                  slidesToShow: 2,
                   slidesToScroll: 1
               }
           }
       ]
   });
+
 });
 
 
