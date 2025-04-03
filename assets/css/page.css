@@ -279,7 +279,7 @@ line-height: normal;
     gap: 8px;
   }
   .column-one .slick-current:before{
-    left: 43%;
+    left: 42%;
     top: -14px;
     height: 22px;
     width: 22px
