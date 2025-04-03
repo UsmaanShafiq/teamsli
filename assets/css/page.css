@@ -135,6 +135,7 @@ body {
 .slider .slide img{
   width: 100%;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .slick-vertical {
@@ -278,8 +279,8 @@ line-height: normal;
   .column-two{
     padding: 5px;
   }
-  .cards .slick-track{
-    gap: 10px;
+  .slick-track{
+    gap: 8px;
   }
   .column-one .slick-current:before{
     left: 43%;
@@ -289,6 +290,6 @@ line-height: normal;
   }
   .column-one .slick-slide.slick-current{
     border: 3px solid var(--primary-blue);
-    border-radius: 10px;
+    border-radius: 8px;
   }
 }
