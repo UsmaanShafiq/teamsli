@@ -88,13 +88,29 @@ body {
 .text-input {
   width: 100%;
   border: none;
-  resize: none;
+  resize: vertical;
+  min-height: 60px;
+  max-height: 200px;
   background-color: transparent;
   font-family: 'Aptos', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   outline: none;
 }
 
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475467;
+  margin-bottom: 16px;
+}
+
+.slide-designs {
+  height: 620px;
+  padding: 15px;
+  background-color: #FCFCFD;
+  overflow-y: auto;
+  border-radius: 15px;
+}
 .input-actions {
   display: flex;
   justify-content: flex-end;

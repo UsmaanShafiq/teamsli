@@ -61,7 +61,7 @@ font-family: 'Aptos Bold', sans-serif;
 text-align: center;
 font-size: 32px;
 font-weight: 800;
-color: var(--dark-gray);
+color: #475467;
 margin-bottom: 40px;
 }
 
@@ -80,9 +80,23 @@ width: 100%;
 border: none;
 background: transparent;
 display: block;
-font-size: 14px;
-color: var(--dark-gray);
+font-size: 16px;
+color: #475467;
 margin-bottom: 12px;
+resize: vertical;
+min-height: 60px;
+max-height: 200px;
+overflow-y: auto;
+line-height: 1.5;
+}
+
+.slide-input::-webkit-scrollbar {
+    width: 6px;
+}
+
+.slide-input::-webkit-scrollbar-thumb {
+    background-color: #98A2B3;
+    border-radius: 3px;
 }
 
 .slide-input:focus {
