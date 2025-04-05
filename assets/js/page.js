@@ -13,8 +13,8 @@ $(document).ready(function(){
         {
               breakpoint: 1025, // When screen width is 1024px or less
               settings: {
-                  vertical: false, // Switch to horizontal mode
-                  verticalSwiping: false,
+                  vertical: true, // Switch to horizontal mode
+                  verticalSwiping: true,
                   slidesToShow: 2, // Adjust number of slides
                   slidesToScroll: 1,
               }
@@ -22,8 +22,8 @@ $(document).ready(function(){
           {
               breakpoint: 768, // When screen width is 768px or less
               settings: {
-                  vertical: false,
-                  verticalSwiping: false,
+                  vertical: true,
+                  verticalSwiping: true,
                   slidesToShow: 2,
                   slidesToScroll: 1
               }
