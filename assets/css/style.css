@@ -66,7 +66,7 @@ margin-bottom: 40px;
 }
 
 .input-container {
-display: flex;
+display: block;
 gap: 15px;
 flex-direction: column;
 background-color: var(--light-gray);
@@ -75,7 +75,7 @@ padding: 16px;
 margin-bottom: 32px;
 }
 
-.slide-input {
+.text-input {
 width: 100%;
 border: none;
 background: transparent;
@@ -83,27 +83,31 @@ display: block;
 font-size: 16px;
 color: #475467;
 margin-bottom: 12px;
-resize: vertical;
-min-height: 60px;
-max-height: 400px;
 padding: 8px;
-line-height: 1.5;
-overflow-y: auto;
 overflow-y: auto;
 line-height: 1.5;
+min-height: 60px;
+max-height: 200px; /* max expansion height */
+overflow-y: auto;
+resize: none !important; /* prevent manual resize if you want */
 }
 
-.slide-input::-webkit-scrollbar {
+.text-input::-webkit-scrollbar {
     width: 6px;
 }
 
-.slide-input::-webkit-scrollbar-thumb {
+.text-input::-webkit-scrollbar-thumb {
     background-color: #98A2B3;
     border-radius: 3px;
 }
 
-.slide-input:focus {
+.text-input:focus {
 outline: none;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: end;
+    align-items: center; 
 }
 
 .create-btn {
@@ -233,14 +237,10 @@ line-height: 1.5;
     margin-bottom: 0;
 }
 
-.create-btn {
-    width: auto;
-    margin-left: 12px;
-}
 }
 
 /* Mobile specific styles (390px and below) */
-@media (max-width: 390px) {
+@media (max-width: 478px) {
 .header {
     padding: 16px;
 }
@@ -255,7 +255,7 @@ line-height: 1.5;
 }
 
 .input-container {
-    padding: 15px 12px 10px;
+    padding: 5px 10px 10px;
     margin-bottom: 24px;
     gap: 10px;
 }
@@ -278,12 +278,14 @@ line-height: 1.5;
     flex-direction: column;
     gap: 16px;
 }
-
+.btn-wrapper{
+    display: block;
+}
 .create-btn {
-    width: 92%;
+    width: calc(100% - 30px);
     position: absolute;
     left: 14px;
-    margin-top: 98px;
+    margin-top: 20px;
 }
 
 .templates-container{

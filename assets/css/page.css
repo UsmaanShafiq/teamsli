@@ -88,7 +88,25 @@ body {
 .slide-input {
   margin-bottom: 2rem;
 }
+.text-input{
+  width: 100%;
+  min-height: 60px;
+  max-height: 200px; /* max expansion height */
+  overflow-y: auto;
+  resize: none !important; /* prevent manual resize if you want */
+}
+.text-input::-webkit-scrollbar {
+  width: 6px;
+}
 
+.text-input::-webkit-scrollbar-thumb {
+  background-color: #98A2B3;
+  border-radius: 3px;
+}
+
+.text-input:focus {
+outline: none;
+}
 .input-container {
   background-color: var(--light-gray);
   border-radius: 16px;
@@ -312,7 +330,7 @@ line-height: normal;
   position: absolute;
   left: 3%;
   margin-top: 20px;
-  width: 95% !important;
+  width: calc(100% - 20px) !important;
 }
   .col-two-top-container .btn-outline{
     display: none;
