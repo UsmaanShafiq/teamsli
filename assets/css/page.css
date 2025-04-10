@@ -100,11 +100,14 @@ body {
   border: none;
   resize: vertical;
   min-height: 60px;
-  max-height: 200px;
+  max-height: 400px;
   background-color: transparent;
   font-family: 'Aptos', sans-serif;
   font-size: 16px;
   outline: none;
+  padding: 8px;
+  line-height: 1.5;
+  overflow-y: auto;
 }
 
 .title {
@@ -155,8 +158,16 @@ div.col-two-top-container > h2{
   height: 620px;
   padding: 15px;
   background-color: #FCFCFD;
-  overflow: hidden; /* Enables vertical scrolling */
+  overflow-y: auto;
   border-radius: 15px;
+}
+.slide-designs::-webkit-scrollbar {
+  width: 6px;
+}
+
+.slide-designs::-webkit-scrollbar-thumb {
+  background-color: #98A2B3;
+  border-radius: 3px;
 }
 .slide-designs .slick-list{
   overflow: unset;
