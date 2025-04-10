@@ -155,6 +155,7 @@ div.col-two-top-container > h2{
   display: flex;
   flex-direction: row;
   gap: 30px;
+  width:100%;
 }
 
 .column-one{
@@ -213,7 +214,7 @@ div.col-two-top-container > h2{
 .slick-vertical .slick-current:after{
   content: "";
   height: 35px;
-  margin-top:-95px;
+  margin-top:-90px;
   width: 35px;
   background-image: url(../images/circle-arrow-right.svg);
   background-repeat: no-repeat;
@@ -233,34 +234,39 @@ div.col-two-top-container > h2{
   gap: 30px;
 }
 
-.card-media .card-img{
+/* 2 Rows Slider */
+#twoRowsSlider {
+  display: none;
+}
+.slide-item {
+	display: flex !important;
   width: 100%;
 }
-
-.card-content{
+#twoRowsSlider .slick-track, #twoRowsSlider .slick-track .slick-slide{
   display: flex;
+  gap: 15px;
+}
+#twoRowsSlider .slick-track .slick-slide{
   flex-direction: column;
-  gap: 16px;
-  margin-top: 90px;
 }
 
-.card-content h3{
-color: #0C111D;
-font-family: "Aptos";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.column-one #twoRowsSlider .slick-track .slick-slide.slick-current{
+  border: 0;
+}
+#twoRowsSlider .slide-item img{
+	width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-.card-content p{
-  color: #0C111D;
-  font-family: "Aptos";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.slick-prev:before, .slick-next:before, .slick-dots li.slick-active button:before{
+  color: var(--primary-blue);
 }
+.slick-dots li{
+  margin: 0;
+}
+
+
 
 @media(max-width: 1280px){
   .slide-designs{
@@ -273,8 +279,11 @@ line-height: normal;
 
 @media(max-width: 1024px){
   .slide-designs{
-    width: 50%;
-    margin: 0 auto;
+    height: auto;
+    display: none;
+  }
+  #twoRowsSlider {
+    display: block;	
   }
   .btn.btn-primary{
     display: flex;
