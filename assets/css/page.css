@@ -110,7 +110,7 @@ outline: none;
 .input-container {
   background-color: var(--light-gray);
   border-radius: 16px;
-  padding: 10px;
+  padding: 5px 10px 10px;
 }
 
 .text-input {
@@ -316,6 +316,9 @@ line-height: normal;
 
 
 @media(max-width:478px){
+  .page-content{
+    margin-top: 20px;
+  }
   .container{
     padding: 10px;
   }
